@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Technologies | AI, Cloud and Software Consulting</title>
+<meta name="description" content="Kestrel Technologies plans, builds and runs AI, cloud and custom software for growing and enterprise companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:'#060D24',deep:'#0B1636',ink:'#0B1533',brand:'#2F6BFF',sky:'#38BDF8',mint:'#34D399',soft:'#F4F7FC'},fontFamily:{display:['Sora','sans-serif'],sans:['"DM Sans"','system-ui','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{background:#fff;color:#0B1533}
+:focus-visible{outline:2px solid #38BDF8;outline-offset:3px}
+.grad{background:linear-gradient(90deg,#38BDF8,#2F6BFF 60%,#34D399);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px #2F6BFF99}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,#fff5 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn:hover::after{transform:translateX(120%)}
+.rise{opacity:0;transform:translateY(18px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+.spot{position:relative;background:#fff;border:1px solid #E3E9F5;transition:transform .3s,box-shadow .3s,border-color .3s}
+.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--x,50%) var(--y,50%),#2F6BFF1f,transparent 70%)}
+.spot:hover{transform:translateY(-6px);box-shadow:0 24px 50px -22px #2F6BFF66;border-color:#2F6BFF66}
+.spot:hover::before{opacity:1}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.marq{display:flex;width:max-content;animation:marq 32s linear infinite}
+@keyframes marq{to{transform:translateX(-50%)}}
+.glow{position:absolute;border-radius:9999px;filter:blur(90px);opacity:.35;animation:float 9s ease-in-out infinite}
+.slide{position:absolute;inset:0;opacity:0;transform:translateX(20px);transition:opacity .6s,transform .6s;pointer-events:none}
+.slide.on{opacity:1;transform:none;pointer-events:auto}
+#hdr.stuck{background:#060D24e6;backdrop-filter:blur(12px);box-shadow:0 1px 0 #ffffff14}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.rise{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="font-sans antialiased">
+<div id="bar" class="fixed left-0 top-0 z-[60] h-[3px] w-0 bg-gradient-to-r from-sky to-brand"></div>
+
+<header id="hdr" class="fixed inset-x-0 top-0 z-50 text-white transition-all duration-300">
+ <div class="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-5">
+<a href="#top" class="flex items-center gap-2.5 font-display text-xl font-bold">
+  
+  <span>american chase</span>
+</a>
+  <nav class="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex" aria-label="Main">
+   <a class="hover:text-white" href="#services">Services</a><a class="hover:text-white" href="#process">Process</a><a class="hover:text-white" href="#work">Work</a><a class="hover:text-white" href="#voices">Clients</a>
+   <a href="#contact" class="btn rounded-lg bg-brand px-5 py-2.5 text-white">Get in touch</a>
+  </nav>
+  <button id="mb" class="rounded p-2 md:hidden" aria-label="Open menu" aria-expanded="false"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+ <div id="mn" class="hidden bg-navy px-5 pb-5 md:hidden"><div class="flex flex-col gap-4 pt-2">
+  <a href="#services">Services</a><a href="#process">Process</a><a href="#work">Work</a><a href="#voices">Clients</a><a href="#contact" class="rounded-lg bg-brand px-4 py-2.5 text-center">Get in touch</a></div></div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="relative overflow-hidden bg-navy text-white">
+ <canvas id="net" class="absolute inset-0 h-full w-full" aria-hidden="true"></canvas>
+ <div class="glow -left-20 top-10 h-72 w-72 bg-brand"></div><div class="glow -right-10 bottom-0 h-72 w-72 bg-sky" style="animation-delay:-3s"></div>
+ <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-24 pt-36 lg:grid-cols-[1.15fr_.85fr] lg:pt-44">
+  <div>
+   <p class="rise inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-white/80"><span class="h-2 w-2 animate-pulse rounded-full bg-mint"></span>Now booking Q4 project slots</p>
+   <h1 class="rise mt-6 font-display text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.6rem]" style="animation-delay:.1s">We build <span id="word" class="grad">AI products</span><br>that move your business forward.</h1>
+   <p class="rise mt-6 max-w-xl text-lg leading-relaxed text-white/70" style="animation-delay:.2s">Strategy, engineering and support for companies that want technology to deliver results, not slide decks.</p>
+   <div class="rise mt-9 flex flex-wrap gap-3" style="animation-delay:.3s">
+    <a href="#contact" class="btn rounded-lg bg-brand px-7 py-3.5 font-medium">Book a free consultation</a>
+    <a href="#work" class="rounded-lg border border-white/20 px-7 py-3.5 font-medium transition hover:bg-white/10">View our work</a>
+   </div>
+  </div>
+  <div class="rise relative hidden lg:block" style="animation-delay:.4s" aria-hidden="true">
+   <div class="float rounded-2xl border border-white/10 bg-white/[.06] p-6 shadow-2xl backdrop-blur-xl">
+    <div class="flex items-center justify-between text-sm"><span class="text-white/60">Support automation</span><span class="rounded-full bg-mint/15 px-3 py-1 text-xs text-mint">Live</span></div>
+    <p class="mt-5 font-display text-5xl font-bold">64%</p><p class="text-sm text-white/60">of tickets resolved without an agent</p>
+    <svg viewBox="0 0 300 80" class="mt-5 w-full"><defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2F6BFF" stop-opacity=".5"/><stop offset="1" stop-color="#2F6BFF" stop-opacity="0"/></linearGradient></defs><path id="ln" d="M0 70C40 66 60 50 100 52S160 30 200 28 260 12 300 6" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="400" stroke-dashoffset="400"><animate attributeName="stroke-dashoffset" to="0" dur="2.2s" begin=".8s" fill="freeze"/></path><path d="M0 70C40 66 60 50 100 52S160 30 200 28 260 12 300 6V80H0Z" fill="url(#a)"/></svg>
+   </div>
+   <div class="float absolute -bottom-8 -left-8 rounded-xl border border-white/10 bg-deep/90 px-5 py-4 shadow-xl backdrop-blur" style="animation-delay:-2s"><p class="text-xs text-white/50">Cloud spend</p><p class="font-display text-2xl font-bold text-mint">-31%</p></div>
+   <div class="float absolute -right-4 -top-6 rounded-xl border border-white/10 bg-deep/90 px-5 py-4 shadow-xl backdrop-blur" style="animation-delay:-4s"><p class="text-xs text-white/50">Release cycle</p><p class="font-display text-2xl font-bold text-sky">2 weeks</p></div>
+  </div>
+ </div>
+ <div class="relative border-t border-white/10 bg-white/[.03] py-5"><div class="overflow-hidden"><div class="marq text-sm font-medium text-white/45" id="mq"></div></div></div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-soft py-24">
+ <div class="mx-auto max-w-6xl px-5">
+  <div class="reveal mx-auto max-w-2xl text-center"><h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">Everything you need to ship and scale</h2><p class="mt-4 text-ink/65">From the first idea to production support, one team that owns the outcome.</p></div>
+  <div id="svc" class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+ </div>
+</section>
+
+<!-- STATS -->
+<section class="relative overflow-hidden bg-navy py-20 text-white">
+ <div class="glow left-1/3 top-0 h-60 w-60 bg-brand"></div>
+ <div class="relative mx-auto grid max-w-6xl grid-cols-2 gap-10 px-5 md:grid-cols-4">
+  <div class="reveal"><p class="font-display text-5xl font-bold grad"><span data-c="150">0</span>+</p><p class="mt-2 text-white/60">Projects delivered</p></div>
+  <div class="reveal" style="--d:.1s"><p class="font-display text-5xl font-bold grad"><span data-c="12">0</span></p><p class="mt-2 text-white/60">Countries served</p></div>
+  <div class="reveal" style="--d:.2s"><p class="font-display text-5xl font-bold grad"><span data-c="200">0</span>+</p><p class="mt-2 text-white/60">Engineers and consultants</p></div>
+  <div class="reveal" style="--d:.3s"><p class="font-display text-5xl font-bold grad"><span data-c="96">0</span>%</p><p class="mt-2 text-white/60">Clients who return</p></div>
+ </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="py-24">
+ <div class="mx-auto max-w-6xl px-5">
+  <div class="reveal max-w-2xl"><h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">A clear path from idea to launch</h2><p class="mt-4 text-ink/65">Four stages, each with a deliverable you can review and sign off.</p></div>
+  <div class="relative mt-14">
+   <div class="absolute left-0 right-0 top-6 hidden h-0.5 bg-ink/10 lg:block"><div id="pl" class="h-full w-0 bg-gradient-to-r from-sky to-brand transition-all duration-1000"></div></div>
+   <div id="stp" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"></div>
+  </div>
+ </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="bg-soft py-24">
+ <div class="mx-auto max-w-6xl px-5">
+  <div class="reveal max-w-2xl"><h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">Results our clients can point to</h2></div>
+  <div id="cs" class="mt-12 grid gap-6 md:grid-cols-3"></div>
+ </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="voices" class="py-24">
+ <div class="reveal mx-auto max-w-3xl px-5 text-center">
+  <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">What clients say</h2>
+  <div class="relative mt-12 h-64 sm:h-52" id="tm"></div>
+  <div class="mt-6 flex justify-center gap-2" id="dots"></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative overflow-hidden bg-navy py-24 text-white">
+ <div class="glow -right-20 top-0 h-80 w-80 bg-brand"></div>
+ <div class="relative mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2">
+  <div class="reveal">
+   <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">Let us look at your project</h2>
+   <p class="mt-5 max-w-md leading-relaxed text-white/70">Tell us what you are trying to achieve. A senior consultant will reply within one working day with next steps, no sales script.</p>
+   <dl class="mt-9 space-y-5 text-sm"><div><dt class="text-white/50">Email</dt><dd class="font-medium">hello@yourcompany.com</dd></div><div><dt class="text-white/50">Phone</dt><dd class="font-medium">+91 00000 00000</dd></div><div><dt class="text-white/50">Office</dt><dd class="font-medium">Your address, City, Country</dd></div></dl>
+  </div>
+  <form id="fm" class="reveal space-y-5 rounded-2xl border border-white/10 bg-white/[.06] p-6 backdrop-blur sm:p-8" novalidate>
+   <div class="grid gap-5 sm:grid-cols-2">
+    <div><label for="n" class="text-sm text-white/80">Full name</label><input id="n" required class="mt-1.5 w-full rounded-lg border border-white/15 bg-navy/60 px-3.5 py-3 outline-none focus:border-sky"><p class="e mt-1 hidden text-sm text-red-300">Enter your name.</p></div>
+    <div><label for="em" class="text-sm text-white/80">Work email</label><input id="em" type="email" required class="mt-1.5 w-full rounded-lg border border-white/15 bg-navy/60 px-3.5 py-3 outline-none focus:border-sky"><p class="e mt-1 hidden text-sm text-red-300">Enter a valid email.</p></div>
+   </div>
+   <div><label for="t" class="text-sm text-white/80">I need help with</label><select id="t" class="mt-1.5 w-full rounded-lg border border-white/15 bg-navy px-3.5 py-3 outline-none focus:border-sky"><option>AI consulting</option><option>Web or mobile app</option><option>Cloud and DevOps</option><option>SAP or Salesforce</option><option>MVP</option><option>Staffing</option></select></div>
+   <div><label for="m" class="text-sm text-white/80">Message</label><textarea id="m" rows="4" required class="mt-1.5 w-full rounded-lg border border-white/15 bg-navy/60 px-3.5 py-3 outline-none focus:border-sky"></textarea><p class="e mt-1 hidden text-sm text-red-300">Write a short message.</p></div>
+   <button class="btn w-full rounded-lg bg-brand px-6 py-3.5 font-medium">Send message</button>
+   <p id="ok" class="hidden rounded-lg bg-mint/15 px-4 py-3 text-sm text-mint" role="status">Thanks. We will reply within one working day.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="bg-navy text-sm text-white/60"><div class="mx-auto max-w-6xl border-t border-white/10 px-5 py-8"><div class="flex flex-col justify-between gap-4 sm:flex-row"><p>&copy; <span id="yr"></span> Kestrel Technologies. All rights reserved.</p><div class="flex gap-6"><a class="hover:text-white" href="#services">Services</a><a class="hover:text-white" href="#work">Work</a><a class="hover:text-white" href="#contact">Contact</a><a class="hover:text-white" href="#top">Back to top</a></div></div></div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const ic=p=>`<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const S=[
+['AI and automation','Assistants, copilots and document workflows connected to the tools your teams already use.','<path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/>'],
+['Web and mobile apps','Customer portals, internal tools and mobile apps designed with users and built to last.','<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>'],
+['Cloud and DevOps','Migration, pipelines and monitoring that keep releases fast and bills predictable.','<path d="M7 18a4 4 0 010-8 5 5 0 019.6-1A4.5 4.5 0 0117 18z"/>'],
+['SAP and Salesforce','Implementation, migration and support from consultants who have shipped these before.','<path d="M4 6h16M4 12h16M4 18h10"/>'],
+['MVP development','A working first version in front of real users within weeks, then iterate on evidence.','<path d="M5 19c1-6 5-10 14-14-1 9-5 13-11 14zM9 15l-4 4"/>'],
+['IT staffing','Vetted engineers who join your team in days, for a sprint or a longer stretch.','<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M17 11a3 3 0 100-6M21 20c0-2-1.5-3.6-4-4.4"/>']];
+$('#svc').innerHTML=S.map((s,i)=>`<article class="spot reveal rounded-2xl p-7" style="--d:${i*.08}s"><div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">${ic(s[2])}</div><h3 class="mt-5 font-display text-xl font-semibold">${s[0]}</h3><p class="mt-2 leading-relaxed text-ink/65">${s[1]}</p></article>`).join('');
+const P=[['Discover','Workshops and a short audit of your systems, data and goals.','Opportunity map'],['Design','Prototypes and architecture you can test before we commit.','Clickable prototype'],['Build','Working software every two weeks, with demos you can steer.','Release every sprint'],['Run','Launch, training and ongoing monitoring and support.','Live dashboard']];
+$('#stp').innerHTML=P.map((p,i)=>`<div class="reveal relative" style="--d:${i*.15}s"><div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-ink font-display font-semibold text-white ring-8 ring-white">${i+1}</div><h3 class="mt-5 font-display text-xl font-semibold">${p[0]}</h3><p class="mt-2 text-ink/65">${p[1]}</p><p class="mt-3 inline-block rounded-full bg-brand/10 px-3 py-1 text-xs font-medium text-brand">${p[2]}</p></div>`).join('');
+const C=[['Logistics','Exception handling cut from hours to minutes','An AI assistant reads carrier emails, matches orders and drafts replies for approval.','from-brand to-sky'],['Retail','SAP rollout across 40 stores, no trading downtime','Finance and inventory moved to one platform in phased releases.','from-ink to-brand'],['Financial services','Cloud migration with a lower monthly bill','Sixty applications moved in phases with cost tracking from week one.','from-sky to-mint']];
+$('#cs').innerHTML=C.map((c,i)=>`<article class="spot reveal overflow-hidden rounded-2xl" style="--d:${i*.1}s"><div class="relative h-40 bg-gradient-to-br ${c[3]}"><svg class="absolute inset-0 h-full w-full opacity-20" aria-hidden="true"><defs><pattern id="p${i}" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#fff"/></pattern></defs><rect width="100%" height="100%" fill="url(#p${i})"/></svg><span class="absolute bottom-4 left-5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink">${c[0]}</span></div><div class="p-7"><h3 class="font-display text-xl font-semibold leading-snug">${c[1]}</h3><p class="mt-3 text-ink/65">${c[2]}</p><a href="#contact" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-brand">Read case study <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a></div></article>`).join('');
+const T=[['Their team understood our operations in a week and shipped a working assistant in six. Our support backlog is gone.','Priya Sharma','COO, logistics company'],['Calm, senior and honest about trade-offs. The SAP rollout finished on the date they gave us in month one.','Rahul Mehta','CIO, retail group'],['They treated our cloud bill like their own. We saw the savings in the first quarter.','Anita Rao','CTO, financial services firm']];
+$('#tm').innerHTML=T.map((t,i)=>`<figure class="slide ${i?'':'on'}"><blockquote class="font-display text-xl font-medium leading-relaxed sm:text-2xl">&ldquo;${t[0]}&rdquo;</blockquote><figcaption class="mt-6 text-sm text-ink/60"><span class="font-semibold text-ink">${t[1]}</span>, ${t[2]}</figcaption></figure>`).join('');
+$('#dots').innerHTML=T.map((_,i)=>`<button class="h-2.5 rounded-full bg-ink/20 transition-all" aria-label="Show testimonial ${i+1}"></button>`).join('');
+let ti=0,tt;const sl=$$('.slide'),dt=$$('#dots button');
+function show(i){ti=i;sl.forEach((s,k)=>s.classList.toggle('on',k===i));dt.forEach((d,k)=>{d.className='h-2.5 rounded-full transition-all '+(k===i?'w-8 bg-brand':'w-2.5 bg-ink/20')});}
+dt.forEach((d,i)=>d.onclick=()=>{show(i);clearInterval(tt);tt=setInterval(()=>show((ti+1)%sl.length),6000)});show(0);tt=setInterval(()=>show((ti+1)%sl.length),6000);
+const techs=['AWS','Azure','Google Cloud','SAP','Salesforce','Kubernetes','React','Flutter','Node.js','Python','Terraform','Snowflake','Power BI','OpenAI','Databricks'];
+$('#mq').innerHTML=[...techs,...techs].map(t=>`<span class="mx-8 whitespace-nowrap">${t}</span>`).join('');
+// header, progress bar, menu
+const h=$('#hdr');addEventListener('scroll',()=>{h.classList.toggle('stuck',scrollY>30);$('#bar').style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+$('#mb').onclick=()=>{const o=$('#mn').classList.toggle('hidden')===false;$('#mb').setAttribute('aria-expanded',o)};
+$$('#mn a').forEach(a=>a.onclick=()=>$('#mn').classList.add('hidden'));
+// rotating headline word
+const W=['AI products','cloud platforms','custom software','mobile apps'];let wi=0;const wd=$('#word');
+if(!reduce)setInterval(()=>{wd.style.transition='opacity .3s,transform .3s';wd.style.opacity=0;wd.style.transform='translateY(8px)';setTimeout(()=>{wi=(wi+1)%W.length;wd.textContent=W[wi];wd.style.opacity=1;wd.style.transform='none'},300)},2800);
+wd.style.display='inline-block';
+// reveal + counters + process line
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');if(e.target.querySelector('#pl')||e.target.id==='process')setTimeout(()=>$('#pl').style.width='100%',300);io.unobserve(e.target)}),{threshold:.15});
+$$('.reveal,#process').forEach(el=>io.observe(el));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,end=+el.dataset.c,t0=performance.now(),d=reduce?1:1600;(function f(t){const p=Math.min((t-t0)/d,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0);co.unobserve(el)}),{threshold:.6});
+$$('[data-c]').forEach(el=>co.observe(el));
+// spotlight hover
+document.addEventListener('mousemove',e=>{const c=e.target.closest&&e.target.closest('.spot');if(!c)return;const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')});
+// hero network canvas
+(function(){const cv=$('#net'),x=cv.getContext('2d');let w,hh,pts=[],m={x:-999,y:-999};
+function rs(){w=cv.width=cv.offsetWidth;hh=cv.height=cv.offsetHeight;const n=Math.min(70,Math.floor(w/18));pts=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*hh,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+addEventListener('resize',rs);cv.parentElement.addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});rs();
+function dr(){x.clearRect(0,0,w,hh);pts.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>hh)p.vy*=-1;x.fillStyle='#38BDF8aa';x.beginPath();x.arc(p.x,p.y,1.6,0,7);x.fill();
+for(let j=i+1;j<pts.length;j++){const q=pts[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<130){x.strokeStyle=`rgba(56,189,248,${.18*(1-d/130)})`;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}
+const dm=Math.hypot(p.x-m.x,p.y-m.y);if(dm<160){x.strokeStyle=`rgba(47,107,255,${.5*(1-dm/160)})`;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(m.x,m.y);x.stroke()}});if(!reduce)requestAnimationFrame(dr)}dr()})();
+// form (demo: connect to Formspree, Netlify Forms or your own API)
+$('#fm').addEventListener('submit',e=>{e.preventDefault();let ok=true;$$('#fm [required]').forEach(f=>{const bad=!f.value.trim()||(f.type==='email'&&!/^\S+@\S+\.\S+$/.test(f.value));f.nextElementSibling.classList.toggle('hidden',!bad);if(bad)ok=false});if(ok){$('#ok').classList.remove('hidden');e.target.reset()}});
+$('#yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
